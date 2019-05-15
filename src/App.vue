@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
+      <Header />
       <div class="row">
         <div class="col-12">
           <div class="step__first">
@@ -14,15 +15,16 @@
         <button class="btn btn-success">Следующий вопрос</button>
       </div>
     </div>
+
   </div>
 </template>
 
 <script>
-
-
+  import Header from './components/Header'
 
   export default {
     components: {
+      Header
     },
     name: 'app',
     data () {
@@ -34,6 +36,9 @@
 </script>
 
 <style lang="scss">
+  body {
+    font-family: sans-serif;
+  }
   .micro{
     height: 150px;
     width: 150px;
