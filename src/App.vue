@@ -35,7 +35,10 @@
     methods: {
       nextStepApp(){
         this.showResponse = true
-        this.labelText = '7687.78'
+        this.labelText = {
+          text: 'Ваш остаток по балансу: 7687.78',
+          step: 1
+        }
       }
     }
   }

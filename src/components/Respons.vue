@@ -1,8 +1,8 @@
 <template>
   <div class="d-flex justify-content-center">
-    <div class="resp_box">{{label}}</div>
-    <button class="btn-success" v-if="label === 'Хочу узнать свой баланс'">Взять кредит</button>
-    <button class="btn-success">Пополнить счет</button>
+    <div class="resp_box">{{label.text}}</div>
+    <button class="btn-success" v-if="label.step === 1">Взять кредит</button>
+    <button class="btn-success" v-if="label.step === 1">Пополнить счет</button>
   </div>
 </template>
 <script>
