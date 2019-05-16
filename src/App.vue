@@ -33,6 +33,7 @@
 
   import Header from './components/Header'
   import Body from './components/Body'
+  import Body from './components/Body'
 
   export default {
     components: {
@@ -58,7 +59,7 @@
 
 <style lang="scss">
   body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   .micro{
     height: 150px;
