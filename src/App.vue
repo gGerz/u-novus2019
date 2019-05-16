@@ -4,7 +4,7 @@
     <Voice @nextStepApp="nextStepApp"  />
     <!--<Card />-->
     <Respons v-if="showResponse" :label="labelText" />
-    <span class="ouro">
+    <span v-if="$store.state.loader" class="ouro">
       <span class="left"><span class="anim"></span></span>
       <span class="right"><span class="anim"></span></span>
     </span>

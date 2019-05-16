@@ -21,6 +21,7 @@
     },
     methods: {
       nextStep(){
+        this.$store.state.loader = true
         setTimeout(this.setQueryText, 5000)
       },
       setQueryText(){
