@@ -1,9 +1,17 @@
 <template>
   <div>
-    <div class="menu">
-      <img src="../assets/logo.png" class="logo" alt="logo">
+    <div>
+
     </div>
-    <div class="d-flex header">
+    <div class="menu d-flex align-item-center px-5 pb-3">
+      <div class="logo my-auto">
+        <img src="../assets/logo.png" class="logo" alt="logo">
+      </div>
+      <div class="pl-4">
+        <img src="../assets/sw.jpg" class="smart" alt="logo">
+      </div>
+    </div>
+    <div class="pl-5 d-flex header">
       <div>Карты</div>
       <div>Кредиты</div>
       <div>Вклады и инвестиции</div>
@@ -19,17 +27,21 @@
     cursor: pointer;
 
       &:hover {
-      border-bottom: 3px solid #266dc2;
+      border-bottom: 2px solid #266dc2;
     }
   }
 
   .menu{
     border-bottom: 3px solid lightgrey;
-
-    .logo{
-      padding: 15px;
-      margin-top: 10px;
+    padding-top: 30px;
+    .logo {
       width: 250px;
+    }
+    .logo {
+
+    }
+    .smart {
+      height: 65px;
     }
   }
 
