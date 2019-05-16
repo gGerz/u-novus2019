@@ -9,7 +9,16 @@
               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Скажите что-нибудь...">
               <img class="micro" @click="nextSecondStep()" src="../assets/micro.png" alt="micro">
             </div>
-            <div class="resp_box balance"></div>
+            <div class="resp_box balance">
+              <div>
+                Зарплатная карта
+              </div>
+              <div>
+                1 337 000.69 Р
+              </div>
+              <div>**** 5028</div>
+              <div> VISA</div>
+            </div>
           </div>
           <div class="step step__second" v-if="secondStep">
             <h1>Приветики!</h1>
@@ -45,7 +54,12 @@
 </script>
 <style>
   .resp_box {
-
+    border: 2px #5d5d5d dashed;
+    border-radius: 10px;
+    padding: 10px 20px;
   }
-  .balance {}
+  .balance {
+    width: 450px;
+    height: 200px;
+  }
 </style>
