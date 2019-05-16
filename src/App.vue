@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <Voice />
+    <Voice @nextStepApp="nextStepApp"  />
     <Card />
-    <Respons @nextStepApp="nextStepApp" :label="labelText" />
+    <Respons :label="labelText" />
 <!--    <Body />-->
   </div>
 </template>
@@ -34,9 +34,8 @@
     },
     methods: {
       nextStepApp(){
-        console.log('ss')
         this.showResponse = true
-        this.labelText = 'привееееееет'
+        this.labelText = '7687.78'
       }
     }
   }
