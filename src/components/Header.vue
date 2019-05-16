@@ -23,7 +23,7 @@
   }
 
   .menu{
-    border-bottom: 3px solid lightgrey;
+    /*border-bottom: 3px solid lightgrey;*/
     padding-top: 30px;
     .logo {
       width: 250px;
