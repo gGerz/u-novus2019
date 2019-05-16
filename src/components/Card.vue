@@ -13,7 +13,14 @@
           <div class="font24">
             1 337 000.69 Р
           </div>
+
         </div>
+
+      </div>
+      <button class="btn-resp mt-3">Внести деньги на счет</button>
+      <div class="card_war">
+        Ваш остаток на балансе кредитной карты: 7687.78. Внимание! Если в течение этого месяца вы внесли меньше 2000, нам будут начислены проценты по карте.
+
       </div>
 <!--      <div class="card_line my-4"></div>-->
 <!--      <div class="balance d-flex justify-content-between">-->
@@ -50,6 +57,12 @@
 </template>
 
 <style>
+  .card_war {
+    padding-top: 15px;
+    width: 650px;
+    font-size: 12px;
+    color: #a0a0a0;
+  }
   .card_title {
     font-size: 24px;
   }
