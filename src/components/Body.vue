@@ -1,14 +1,22 @@
 <template>
-  <div class="container">
+  <div class="container body-container">
     <div class="row">
       <div class="col-12">
         <div class="steps">
           <div class="step step__first" v-if="firstStep">
             <h1>Голосой помощник SmartWorld</h1>
-            <div class="form-group">
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Скажите что-нибудь...">
+            <div class="d-flex main-voice">
+              <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Скажите что-нибудь...">
               <img class="micro" @click="nextSecondStep()" src="../assets/micro.png" alt="micro">
             </div>
+
+            <div class="d-flex main-voice-b">
+              <input type="text" class="" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Скажите что-нибудь...">
+              <div class="micro">
+                <button>123</button>
+              </div>
+            </div>
+
             <div class="resp_box balance">
               <div>
                 Зарплатная карта
@@ -16,8 +24,13 @@
               <div>
                 1 337 000.69 Р
               </div>
-              <div>**** 5028</div>
-              <div> VISA</div>
+              <div class="d-flex justify-content-between">
+                <div>**** 5028</div>
+                <div> VISA</div>
+              </div>
+            </div>
+            <div class="resp_box">
+              Оплатите кредит до 13 июня
             </div>
           </div>
           <div class="step step__second" v-if="secondStep">
@@ -52,14 +65,52 @@
     }
   }
 </script>
-<style>
+<style lang="scss">
   .resp_box {
-    border: 2px #5d5d5d dashed;
-    border-radius: 10px;
+    width: 700px;
+    border: 2px #5d5d5d solid;
+    border-radius: 30px;
     padding: 10px 20px;
+    margin-bottom: 30px;
   }
   .balance {
-    width: 450px;
     height: 200px;
+  }
+  .main-voice-b {
+    margin-bottom: 30px;
+    font-size: 22px;
+    height: 60px;
+    width: 700px!important;
+    input {
+      width: 100%;
+      border-radius: 100px;
+      border: solid 2px #ccddec;
+      padding: 0px 30px;
+    }
+    .micro {
+      position: absolute;
+      height: 60px;
+      width: auto;
+      left: 0px
+    }
+  }
+  .main-voice {
+    margin-bottom: 30px;
+    font-size: 22px;
+    height: 60px;
+    width: 700px!important;
+    input {
+      width: 100%;
+      border-radius: 100px;
+      border: 2px #5d5d5d solid;
+      padding: 0px 30px;
+    }
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .body-container {
+
   }
 </style>
