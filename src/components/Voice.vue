@@ -25,7 +25,10 @@
       position: absolute;
       height: 60px;
       width: auto;
-      left: 0px
     }
+  }
+  .btn-micro {
+    height: auto!important;
+    width: 70px;
   }
 </style>
