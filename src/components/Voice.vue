@@ -45,7 +45,7 @@
         }
         if (this.query === 'Дата оплаты по кредиту'){
           this.$emit('nextStepApp')
-          this.query = 'Сведения по кредиту'
+          this.query = 'Остаток по кредитной карте'
           this.$store.state.loader = false
           return
         }

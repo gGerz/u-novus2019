@@ -4,7 +4,7 @@
       <div class="">
         <div class="card_title">Visa classic<img class="visa ml-3" src="../assets/visa.jpg" alt=""></div>
         <div class="font14">
-          Зарплатная карта
+          Кредитная карта
         </div>
         <div class="font14">**** 0451, дествительно до 11/2020</div>
       </div>

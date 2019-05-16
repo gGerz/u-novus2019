@@ -4,7 +4,7 @@
       <div class="mb-3">{{label.text}}</div>
       <button class="btn-resp" v-if="label.step === 1">Взять кредит</button>
       <button class="btn-resp" v-if="label.step === 1">Пополнить счет</button>
-      <div>
+      <div v-if="label.step === 2">
         <div class="row resp-table">
           <div class="col-2">Оплата услуг</div>
           <div class="col-2">Счет списания</div>
@@ -41,11 +41,20 @@
           <div class="col-2 my-auto">9,00 руб.</div>
         </div>
       </div>
+      <div v-if="label.step === 3">
+        Вам нужно внести: 20000. Остаток выплаты по кредиту: 40000.
+      </div>
+      <button class="btn-resp" v-if="label.step === 3">Cделать взнос</button>
+      <card v-if="label.step === 4" />
     </div>
   </div>
 </template>
 <script>
+  import Card from '../components/Card'
   export default {
+    components: {
+      Card
+    },
     props: ['label'],
     data () {
       return {

@@ -3,7 +3,7 @@
     <Header />
     <Voice @nextStepApp="nextStepApp"  />
     <!--<Card />-->
-    <Respons v-if="showResponse" :label="labelText" />
+    <Respons v-if="showResponse && !$store.state.loader" :label="labelText" />
     <span v-if="$store.state.loader" class="ouro">
       <span class="left"><span class="anim"></span></span>
       <span class="right"><span class="anim"></span></span>
@@ -33,15 +33,39 @@
       return {
         showLoader: false,
         showResponse: false,
-        labelText: ''
+        labelText: 'start'
       }
     },
     methods: {
       nextStepApp(){
         this.showResponse = true
-        this.labelText = {
-          text: 'Ваш остаток по балансу: 7687.78',
-          step: 1
+        if (this.labelText === 'start'){
+          this.labelText = {
+            text: 'Ваш остаток по балансу: 7687.78',
+            step: 1
+          }
+          return
+        }
+        if (this.labelText.step === 1){
+          this.labelText = {
+            text: 'Ваши последние 10 операций',
+            step: 2
+          }
+          return
+        }
+        if (this.labelText.step === 2){
+          this.labelText = {
+            text: 'Дата следующего взноса',
+            step: 3
+          }
+          return
+        }
+        if (this.labelText.step === 3){
+          this.labelText = {
+            text: '',
+            step: 4
+          }
+          return
         }
       }
     }
