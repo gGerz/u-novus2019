@@ -4,15 +4,20 @@
       <Header />
       <div class="row">
         <div class="col-12">
-          <div class="step__first">
-            <h1>Поздоровайтесь с консультантом!</h1>
-            <img class="micro" src="./assets/micro.png" alt="micro">
+          <div class="steps">
+            <div class="step step__first" v-if="firstStep">
+              <h1>Поздоровайтесь с консультантом!</h1>
+              <img class="micro" src="./assets/micro.png" alt="micro">
+            </div>
+            <div class="step step__second" v-if="secondStep">
+              <h1>Приветики!</h1>
+            </div>
           </div>
         </div>
       </div>
       <div class="row justify-content-around">
         <button class="btn btn-warning">Отмена</button>
-        <button class="btn btn-success">Следующий вопрос</button>
+        <button class="btn btn-success" @click="nextSecondStep()">Спросить еще</button>
       </div>
     </div>
 
@@ -20,6 +25,8 @@
 </template>
 
 <script>
+  import axios from 'axios'
+
   import Header from './components/Header'
 
   export default {
@@ -29,7 +36,14 @@
     name: 'app',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        firstStep: true,
+        secondStep: false,
+      }
+    },
+    methods: {
+      nextSecondStep(){
+        this.firstStep = false
+        this.secondStep = true
       }
     }
   }
@@ -44,7 +58,7 @@
     width: 150px;
   }
 
-  .step__first{
+  .step{
     display: flex;
     align-items: center;
     flex-direction: column;
