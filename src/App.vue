@@ -2,9 +2,8 @@
   <div id="app">
     <Header />
     <Voice @nextStepApp="nextStepApp"  />
-    <Card />
-    <Respons :label="labelText" />
-<!--    <Body />-->
+    <!--<Card />-->
+    <Respons v-if="showResponse" :label="labelText" />
   </div>
 </template>
 
@@ -28,7 +27,7 @@
     name: 'app',
     data () {
       return {
-        showResponse: '',
+        showResponse: false,
         labelText: 'Здесь будет ваш ответ'
       }
     },

@@ -24,8 +24,22 @@
         setTimeout(this.setQueryText, 5000)
       },
       setQueryText(){
-        this.$emit('nextStepApp')
-        this.query = 'Хочу узнать свой баланс'
+        if (this.query === ''){
+          this.$emit('nextStepApp')
+          this.query = 'Отстаток по балансу'
+        }
+        if (this.query === 'Отстаток по балансу'){
+          this.$emit('nextStepApp')
+          this.query = 'Выписка последних операций'
+        }
+        if (this.query === 'Выписка последних операций'){
+          this.$emit('nextStepApp')
+          this.query = 'Дата оплаты по кредиту'
+        }
+        if (this.query === 'Дата оплаты по кредиту'){
+          this.$emit('nextStepApp')
+          this.query = 'Сведения по кредиту'
+        }
       }
     },
     mounted(){
