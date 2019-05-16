@@ -49,11 +49,11 @@
     font-family: 'Roboto', sans-serif;
 
   }
-  .micro{
-    height: 150px;
-    width: 150px;
+  shadow-a {
+    -webkit-box-shadow: 0px 5px 2px 0px rgba(61,61,61,1);
+    -moz-box-shadow: 0px 5px 2px 0px rgba(61,61,61,1);
+    box-shadow: 0px 5px 2px 0px rgba(61,61,61,1);
   }
-
   .step{
     display: flex;
     align-items: center;

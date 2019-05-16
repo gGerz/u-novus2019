@@ -1,10 +1,13 @@
 <template>
   <div class="mt-5 d-flex justify-content-center">
-    <div class="d-flex main-voice">
-      <input type="text" disabled v-model="query" class="" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Нажмите на кнопку и задайте вопрос ...">
-      <button @click="nextStep" class="btn btn-primary btn-micro">
-        <i class="fas fa-microphone"></i>
-      </button>
+    <div>
+      <div class="d-flex main-voice">
+        <input type="text"  v-model="query" class="" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Нажмите на кнопку и задайте вопрос ...">
+        <button @click="nextStep" class="btn btn-primary btn-micro">
+          <i class="fas fa-microphone"></i>
+        </button>
+      </div>
+      <div class="dev-line my-4"></div>
     </div>
   </div>
 </template>
@@ -31,8 +34,10 @@
 </script>
 
 <style lang="scss">
+  .dev-line {
+    border-bottom: 2px solid #dfdfdf;
+  }
   .main-voice {
-    margin-bottom: 30px;
     font-size: 22px;
     height: 60px;
     width: 700px!important;
