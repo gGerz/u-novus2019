@@ -28,21 +28,25 @@
         if (this.query === ''){
           this.$emit('nextStepApp')
           this.query = 'Оcтаток по балансу'
+          this.$store.state.loader = false
           return
         }
         if (this.query === 'Оcтаток по балансу'){
           this.$emit('nextStepApp')
           this.query = 'Выписка последних операций'
+          this.$store.state.loader = false
           return
         }
         if (this.query === 'Выписка последних операций'){
           this.$emit('nextStepApp')
           this.query = 'Дата оплаты по кредиту'
+          this.$store.state.loader = false
           return
         }
         if (this.query === 'Дата оплаты по кредиту'){
           this.$emit('nextStepApp')
           this.query = 'Сведения по кредиту'
+          this.$store.state.loader = false
           return
         }
       }

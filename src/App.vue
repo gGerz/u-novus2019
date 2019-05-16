@@ -33,7 +33,7 @@
       return {
         showLoader: false,
         showResponse: false,
-        labelText: 'Здесь будет ваш ответ'
+        labelText: ''
       }
     },
     methods: {
