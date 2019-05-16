@@ -6,27 +6,39 @@
       <button class="btn-resp" v-if="label.step === 1">Пополнить счет</button>
       <div>
         <div class="row resp-table">
-          <div class="col-3">Оплата услуг</div>
+          <div class="col-2">Оплата услуг</div>
           <div class="col-2">Счет списания</div>
           <div class="col-2">Получатель</div>
-          <div class="col-1 ">Дата</div>
+          <div class="col-2 ">Дата</div>
           <div class="col-2">Сумма</div>
           <div class="col-2">Кешбек</div>
         </div>
         <div class="dev-line mt-3"></div>
         <div class="row resp-table">
-          <div class="col-3">Купил покушать</div>
+          <div class="col-2 my-auto">Купил покушать</div>
           <div class="col-2">
             <div>Visa</div>
             <div>**** 1337</div>
           </div>
-          <div class="col-2">Пятерочка</div>
-          <div class="col-1 text-center">
-            <div>Сегодня</div>
-            <div>18:00</div>
+          <div class="col-2 my-auto">Пятерочка</div>
+          <div class="col-2 my-auto">
+            <div>Сегодня 18:00</div>
           </div>
-          <div class="col-2">1 999,00 руб.</div>
-          <div class="col-2">Кешбек</div>
+          <div class="col-2 my-auto">1 999,00 руб.</div>
+          <div class="col-2 my-auto">5,00 руб.</div>
+        </div>
+        <div class="row resp-table">
+          <div class="col-2 my-auto">Купил моник</div>
+          <div class="col-2">
+            <div>Visa</div>
+            <div>**** 1337</div>
+          </div>
+          <div class="col-2 my-auto">DNC</div>
+          <div class="col-2 my-auto">
+            <div>Сегодня 18:01</div>
+          </div>
+          <div class="col-2 my-auto">9 999,00 руб.</div>
+          <div class="col-2 my-auto">9,00 руб.</div>
         </div>
       </div>
     </div>
@@ -46,6 +58,7 @@
     border-bottom: 2px solid #dfdfdf;
   }
   .resp-table {
+    margin: 20px 0px;
     font-size: 16px;
     width: 1000px;
   }
