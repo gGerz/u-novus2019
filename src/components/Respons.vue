@@ -1,53 +1,94 @@
 <template>
-  <div class="d-flex justify-content-center">
-    <div class="resp_box">
-      <div v-if="label.text !== ''" class="mb-3">{{label.text}}</div>
-      <button class="btn-resp" v-if="label.step === 1">Взять кредит</button>
-      <button class="btn-resp" v-if="label.step === 1">Пополнить счет</button>
-      <div v-if="label.step === 2">
-        <div class="row resp-table">
-          <div class="col-2">Оплата услуг</div>
-          <div class="col-2">Счет списания</div>
-          <div class="col-2">Получатель</div>
-          <div class="col-2 ">Дата</div>
-          <div class="col-2">Сумма</div>
-          <div class="col-2">Кешбек</div>
+  <div>
+    <div class="dev-line my-4 mx-auto"></div>
+    <div class="d-flex justify-content-center">
+      <div class="resp_box">
+        <div v-if="label.text !== ''" class="mb-3">{{label.text}}</div>
+        <button class="btn-resp" v-if="label.step === 1">Взять кредит</button>
+        <button class="btn-resp" v-if="label.step === 1">Пополнить счет</button>
+        <div v-if="label.step === 2">
+          <div class="row resp-table">
+            <div class="col-2 pl-0">Оплата услуг</div>
+            <div class="col-2">Счет списания</div>
+            <div class="col-2">Получатель</div>
+            <div class="col-2 ">Дата</div>
+            <div class="col-2">Сумма</div>
+            <div class="col-2">Кешбек</div>
+          </div>
+          <div class="dev-line-table mt-3"></div>
+          <div class="row resp-table">
+            <div class="col-2 my-auto pl-0">Купил покушать</div>
+            <div class="col-2">
+              <div>Visa</div>
+              <div>**** 1337</div>
+            </div>
+            <div class="col-2 my-auto">Пятерочка</div>
+            <div class="col-2 my-auto">
+              <div>Сегодня 18:00</div>
+            </div>
+            <div class="col-2 my-auto">1 999,00 руб.</div>
+            <div class="col-2 my-auto">5,00 руб.</div>
+          </div>
+          <div class="row resp-table">
+            <div class="col-2 my-auto pl-0">Купил моник</div>
+            <div class="col-2">
+              <div>Visa</div>
+              <div>**** 1337</div>
+            </div>
+            <div class="col-2 my-auto">DNC</div>
+            <div class="col-2 my-auto">
+              <div>Сегодня 18:01</div>
+            </div>
+            <div class="col-2 my-auto">9 999,00 руб.</div>
+            <div class="col-2 my-auto">9,00 руб.</div>
+          </div>
+          <div class="row resp-table">
+            <div class="col-2 my-auto pl-0">Купил пиво</div>
+            <div class="col-2">
+              <div>Visa</div>
+              <div>**** 1337</div>
+            </div>
+            <div class="col-2 my-auto">Пивасик</div>
+            <div class="col-2 my-auto">
+              <div>Сегодня 11:31</div>
+            </div>
+            <div class="col-2 my-auto">600,00 руб.</div>
+            <div class="col-2 my-auto">30,00 руб.</div>
+          </div>
+          <div class="row resp-table">
+            <div class="col-2 my-auto pl-0">Оплата интернета</div>
+            <div class="col-2">
+              <div>Visa</div>
+              <div>**** 1337</div>
+            </div>
+            <div class="col-2 my-auto">Ростелеком</div>
+            <div class="col-2 my-auto">
+              <div>Сегодня 18:41</div>
+            </div>
+            <div class="col-2 my-auto">899,00 руб.</div>
+            <div class="col-2 my-auto">9,00 руб.</div>
+          </div>
         </div>
-        <div class="dev-line mt-3"></div>
-        <div class="row resp-table">
-          <div class="col-2 my-auto">Купил покушать</div>
-          <div class="col-2">
-            <div>Visa</div>
-            <div>**** 1337</div>
+        <div v-if="label.step === 3">
+          <div class="credit_title">
+            Информация о кредите
           </div>
-          <div class="col-2 my-auto">Пятерочка</div>
-          <div class="col-2 my-auto">
-            <div>Сегодня 18:00</div>
+          <div class="step_item">
+            <div>Дата следующего взноса</div><div>13.05.2019</div>
           </div>
-          <div class="col-2 my-auto">1 999,00 руб.</div>
-          <div class="col-2 my-auto">5,00 руб.</div>
+          <div class="step_item">
+            <div>Нужно внести</div><div>20 000,00 руб.</div>
+          </div>
+          <div class="step_item">
+            <div>Остаток выплаты:</div><div>50 000,00 руб.</div>
+          </div>
         </div>
-        <div class="row resp-table">
-          <div class="col-2 my-auto">Купил моник</div>
-          <div class="col-2">
-            <div>Visa</div>
-            <div>**** 1337</div>
-          </div>
-          <div class="col-2 my-auto">DNC</div>
-          <div class="col-2 my-auto">
-            <div>Сегодня 18:01</div>
-          </div>
-          <div class="col-2 my-auto">9 999,00 руб.</div>
-          <div class="col-2 my-auto">9,00 руб.</div>
-        </div>
+        <button class="btn-resp mt-2" v-if="label.step === 3">Cделать взнос</button>
+        <card v-if="label.step === 4" />
       </div>
-      <div v-if="label.step === 3">
-        Вам нужно внести: 20000. Остаток выплаты по кредиту: 40000.
-      </div>
-      <button class="btn-resp" v-if="label.step === 3">Cделать взнос</button>
-      <card v-if="label.step === 4" />
     </div>
   </div>
+
 </template>
 <script>
   import Card from '../components/Card'
@@ -63,8 +104,18 @@
   }
 </script>
 <style lang="scss">
+  .credit_title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    display: inline-block;
+    border-bottom: 2px solid #dfdfdf;
+  }
+  .dev-line-table {
+    border-bottom: 2px solid #dfdfdf;
+  }
   .dev-line {
     border-bottom: 2px solid #dfdfdf;
+    max-width: 700px;
   }
   .resp-table {
     margin: 20px 0px;
@@ -89,5 +140,12 @@
     margin-bottom: 30px;
     border-radius: 6px;
     font-size: 20px;
+  }
+  .step_item {
+    display: flex;
+    div:first-child {
+      width: 350px;
+      font-weight: 300;
+    }
   }
 </style>

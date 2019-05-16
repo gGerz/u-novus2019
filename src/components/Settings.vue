@@ -2,6 +2,11 @@
   <div>
     <!-- Button trigger modal -->
     <div class="btn-panel">
+      <div class="my-1">
+        <button type="btn" class="set_btn set_btn-g">
+          <i class="far fa-keyboard"></i>
+        </button>
+      </div>
       <div class="my-1" >
         <button type="btn" class="set_btn" data-toggle="modal" data-target="#exampleModalCenter">
           <i class="fas fa-cog"></i>
@@ -12,15 +17,10 @@
           ?
         </button>
       </div>
-      <div class="my-1">
-        <button type="btn" class="set_btn">
-          <i class="far fa-keyboard"></i>
-        </button>
-      </div>
     </div>
     <div>
       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLongTitle">Настройка эмпатической связи</h5>
@@ -29,7 +29,7 @@
               </button>
             </div>
             <div class="modal-body ">
-              <div class="mx-auto w-75">
+              <div class="mx-auto px-3">
                 <div class="mb-4 d-flex justify-content-between align-item-center">
                   <div class="my-auto">
                     Отавьте образец голоса для более эффективного взаимодействия
@@ -62,6 +62,9 @@
   </div>
 </template>
 <style lang="scss">
+  .set_btn-g {
+    background: #266dc2!important;
+  }
   .btn-panel {
     position: fixed;
     right: 20px;
@@ -72,7 +75,7 @@
     height: auto;
   }
   .set_btn {
-    background: #b8b8b8;
+    background: #9f9f9f;
     border: none;
     color: white;
     width: 70px;

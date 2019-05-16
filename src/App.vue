@@ -57,7 +57,7 @@
         }
         if (this.labelText.step === 2){
           this.labelText = {
-            text: 'Дата следующего взноса',
+            text: '',
             step: 3
           }
           return
@@ -77,6 +77,7 @@
 <style lang="scss">
 
   .ouro {
+    top: 340px;
     position: absolute;
     right: 50%;
     height: 46px;

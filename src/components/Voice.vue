@@ -7,7 +7,7 @@
           <i class="fas fa-microphone"></i>
         </button>
       </div>
-      <div class="dev-line my-4"></div>
+
     </div>
   </div>
 </template>
@@ -69,6 +69,9 @@
       border-radius: 6px;
       border: solid 2px #ccddec;
       padding: 0px 20px;
+      border-bottom-right-radius: 0px;
+      border-top-right-radius: 0px;
+      border-right: 0px;
     }
     .micro {
       position: absolute;
@@ -78,6 +81,10 @@
   }
   .btn-micro {
     height: auto!important;
+    background: #266dc2!important;
     width: 70px;
+    font-size: 25px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
   }
 </style>
