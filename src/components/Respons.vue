@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex justify-content-center">
     <div class="resp_box">
-      <div class="mb-3">{{label.text}}</div>
+      <div v-if="label.text !== ''" class="mb-3">{{label.text}}</div>
       <button class="btn-resp" v-if="label.step === 1">Взять кредит</button>
       <button class="btn-resp" v-if="label.step === 1">Пополнить счет</button>
       <div v-if="label.step === 2">
