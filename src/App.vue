@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <Settings />
     <Voice @nextStepApp="nextStepApp"  />
     <!--<Card />-->
     <Respons v-if="showResponse && !$store.state.loader" :label="labelText" />
@@ -19,6 +20,7 @@
   import Respons from './components/Respons'
   import Voice from './components/Voice'
   import Card from './components/Card'
+  import Settings from './components/Settings'
 
   export default {
     components: {
@@ -26,7 +28,8 @@
       Body,
       Respons,
       Voice,
-      Card
+      Card,
+      Settings
     },
     name: 'app',
     data () {
@@ -194,10 +197,7 @@
     }
   }
 
-  .btn{
-    width: 250px;
-    height: 75px;
-  }
+
 
   .btn-cancel{
     border: 1px solid #498dde;
