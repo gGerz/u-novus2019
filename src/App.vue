@@ -1,7 +1,7 @@
 <template>
   <div id="app">
+    <Header />
     <div class="container">
-      <Header />
       <div class="row">
         <div class="col-12">
           <div class="steps">
@@ -16,8 +16,8 @@
         </div>
       </div>
       <div class="row justify-content-around">
-        <button class="btn btn-warning">Отмена</button>
-        <button class="btn btn-success" @click="nextSecondStep()">Спросить еще</button>
+        <button class="btn btn-cancel">Отмена</button>
+        <button class="btn btn-next" @click="nextSecondStep()">Спросить еще</button>
       </div>
     </div>
 
@@ -65,8 +65,26 @@
   }
 
   .btn{
-    height: 150px;
-    width: 150px;
-    border-radius: 150px;
+    width: 250px;
+    height: 75px;
+  }
+
+  .btn-cancel{
+    border: 1px solid #498dde;
+    color: #266dc2;
+
+    &:hover{
+      background-color: #f5faff;
+      color: #266dc2;
+    }
+  }
+  .btn-next{
+    background-color: #00549E;
+    color: #ffffff;
+
+    &:hover{
+      background-color: #2869ca;
+      color: #ffffff;
+    }
   }
 </style>
