@@ -86,44 +86,12 @@
   }
   .balance {
   }
-  .main-voice-b {
-    margin-bottom: 30px;
-    font-size: 22px;
-    height: 60px;
-    width: 700px!important;
-    input {
-      width: 100%;
-      border-radius: 6px;
-      border: solid 2px #ccddec;
-      padding: 0px 20px;
-    }
-    .micro {
-      position: absolute;
-      height: 60px;
-      width: auto;
-      left: 0px
-    }
-  }
+
   .btn-micro {
     height: auto!important;
     width: 70px;
   }
-  .main-voice {
-    margin-bottom: 30px;
-    font-size: 22px;
-    height: 60px;
-    width: 700px!important;
-    input {
-      width: 100%;
-      border-radius: 100px;
-      border: 2px #5d5d5d solid;
-      padding: 0px 30px;
-    }
-    img {
-      height: 100%;
-      width: auto;
-    }
-  }
+
   .body-container {
 
   }

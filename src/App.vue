@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <Voice />
     <Respons label="Вы не заплатили за кредит, колекторы уже в пути" />
     <Body />
 <!--    <div class="container">-->
@@ -35,12 +36,14 @@
   import Header from './components/Header'
   import Body from './components/Body'
   import Respons from './components/Respons'
+  import Voice from './components/Voice'
 
   export default {
     components: {
       Header,
       Body,
-      Respons
+      Respons,
+      Voice
     },
     name: 'app',
     data () {
