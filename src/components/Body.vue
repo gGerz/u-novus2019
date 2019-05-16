@@ -83,7 +83,6 @@
     padding: 10px 20px;
     margin-bottom: 30px;
     border-radius: 6px;
-
   }
   .balance {
   }

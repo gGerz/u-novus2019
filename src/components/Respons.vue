@@ -1,26 +1,24 @@
 <template>
-  <div>123 {{props}}</div>
+  <div class="d-flex justify-content-center">
+    <div class="resp_box">{{label}}</div>
+  </div>
 </template>
 <script>
-
   export default {
-    components: {
-    },
-    name: 'app',
+    props: ['label'],
     data () {
       return {
-        firstStep: true,
-        secondStep: false,
       }
     },
-    props: ['label'],
-    methods: {
-      nextSecondStep(){
-        this.firstStep = false
-        this.secondStep = true
-
-      }
-    }
   }
-
 </script>
+<style>
+
+  .resp_box {
+    width: 700px;
+    border: solid 2px #ccddec;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+  }
+</style>

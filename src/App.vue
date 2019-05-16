@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Respons v-bind:label="hi" />
+    <Respons label="Вы не заплатили за кредит, колекторы уже в пути" />
     <Body />
 <!--    <div class="container">-->
 <!--      <div class="row">-->
