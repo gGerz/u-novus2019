@@ -3,7 +3,7 @@
     <Header />
     <Voice />
     <Card />
-    <Respons label="Вы не заплатили за кредит, колекторы уже в пути" />
+    <Respons @nextStepApp="nextStepApp" :label="labelText" />
 <!--    <Body />-->
   </div>
 </template>
@@ -28,15 +28,15 @@
     name: 'app',
     data () {
       return {
-        firstStep: true,
-        secondStep: false,
+        showResponse: '',
+        labelText: 'Здесь будет ваш ответ'
       }
     },
     methods: {
-      nextSecondStep(){
-        this.firstStep = false
-        this.secondStep = true
-
+      nextStepApp(){
+        console.log('ss')
+        this.showResponse = true
+        this.labelText = 'привееееееет'
       }
     }
   }

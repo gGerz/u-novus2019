@@ -63,20 +63,21 @@
     name: 'app',
     data () {
       return {
-        firstStep: true,
-        secondStep: false,
+        step1: ''
       }
     },
     methods: {
       nextSecondStep(){
         this.firstStep = false
         this.secondStep = true
-
       }
     }
   }
 </script>
 <style lang="scss">
+  *{
+    outline: none;
+  }
   .resp_box {
     width: 700px;
     border: solid 2px #ccddec;
