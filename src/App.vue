@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <Voice />
+    <Card />
     <Respons label="Вы не заплатили за кредит, колекторы уже в пути" />
 <!--    <Body />-->
   </div>
@@ -14,13 +15,15 @@
   import Body from './components/Body'
   import Respons from './components/Respons'
   import Voice from './components/Voice'
+  import Card from './components/Card'
 
   export default {
     components: {
       Header,
       Body,
       Respons,
-      Voice
+      Voice,
+      Card
     },
     name: 'app',
     data () {
@@ -42,6 +45,7 @@
 <style lang="scss">
   body {
     font-family: 'Roboto', sans-serif;
+
   }
   .micro{
     height: 150px;
