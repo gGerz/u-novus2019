@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <Respons v-bind:label="hi" />
     <Body />
 <!--    <div class="container">-->
 <!--      <div class="row">-->
@@ -33,12 +34,13 @@
 
   import Header from './components/Header'
   import Body from './components/Body'
-  import Body from './components/Body'
+  import Respons from './components/Respons'
 
   export default {
     components: {
       Header,
-      Body
+      Body,
+      Respons
     },
     name: 'app',
     data () {

@@ -1,5 +1,5 @@
 <template>
-  <div>123 {{text}}</div>
+  <div>123 {{props}}</div>
 </template>
 <script>
 
@@ -13,6 +13,7 @@
         secondStep: false,
       }
     },
+    props: ['label'],
     methods: {
       nextSecondStep(){
         this.firstStep = false
