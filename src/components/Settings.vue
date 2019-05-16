@@ -17,9 +17,13 @@
           </div>
           <div class="modal-body ">
             <div class="mx-auto w-75">
-              <div class="mb-4">
-                Отавьте образец голоса для более эффективного взаимодействия
-                <img src="../assets/micro.png" class="set_mic" alt="">
+              <div class="mb-4 d-flex justify-content-between align-item-center">
+                <div class="my-auto">
+                  Отавьте образец голоса для более эффективного взаимодействия
+                </div>
+                <div>
+                  <img src="../assets/micro.png" class="set_mic" alt="">
+                </div>
               </div>
               <div class="mb-4">
                 Настроить голос помощника
@@ -45,6 +49,7 @@
 </template>
 <style>
   .set_mic {
-    width: 35px;
+    width: 40px;
+    height: auto;
   }
 </style>
