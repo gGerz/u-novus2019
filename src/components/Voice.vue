@@ -26,19 +26,23 @@
       setQueryText(){
         if (this.query === ''){
           this.$emit('nextStepApp')
-          this.query = 'Отстаток по балансу'
+          this.query = 'Оcтаток по балансу'
+          return
         }
-        if (this.query === 'Отстаток по балансу'){
+        if (this.query === 'Оcтаток по балансу'){
           this.$emit('nextStepApp')
           this.query = 'Выписка последних операций'
+          return
         }
         if (this.query === 'Выписка последних операций'){
           this.$emit('nextStepApp')
           this.query = 'Дата оплаты по кредиту'
+          return
         }
         if (this.query === 'Дата оплаты по кредиту'){
           this.$emit('nextStepApp')
           this.query = 'Сведения по кредиту'
+          return
         }
       }
     },
