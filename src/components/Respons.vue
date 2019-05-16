@@ -4,6 +4,7 @@
       <div class="mb-3">{{label.text}}</div>
       <button class="btn-resp" v-if="label.step === 1">Взять кредит</button>
       <button class="btn-resp" v-if="label.step === 1">Пополнить счет</button>
+      <div>12123</div>
     </div>
   </div>
 </template>
