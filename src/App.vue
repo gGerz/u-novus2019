@@ -6,8 +6,12 @@
         <div class="col-12">
           <div class="steps">
             <div class="step step__first" v-if="firstStep">
-              <h1>Поздоровайтесь с консультантом!</h1>
+              <h1>Голосой помощник SmartWorld</h1>
               <img class="micro" src="./assets/micro.png" alt="micro">
+              <div class="form-group w-100">
+                <label for="exampleInputEmail1">Что вы хотите сделать?</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+              </div>
             </div>
             <div class="step step__second" v-if="secondStep">
               <h1>Приветики!</h1>
@@ -44,6 +48,7 @@
       nextSecondStep(){
         this.firstStep = false
         this.secondStep = true
+
       }
     }
   }
@@ -62,6 +67,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    h1{
+      margin: 20px 0;
+    }
   }
 
   .btn{
