@@ -73,7 +73,7 @@
           </div>
           <div class="dev-line-table mt-3"></div>
           <div class="row resp-table">
-            <div class="col-2 my-auto pl-0">Купил покушать</div>
+            <div class="col-2 my-auto pl-0">Покупка продуктов</div>
             <div class="col-2">
               <div>Visa</div>
               <div>**** 1337</div>
@@ -86,7 +86,7 @@
             <div class="col-2 my-auto">5,00 руб.</div>
           </div>
           <div class="row resp-table">
-            <div class="col-2 my-auto pl-0">Купил моник</div>
+            <div class="col-2 my-auto pl-0">Покупка монитора</div>
             <div class="col-2">
               <div>Visa</div>
               <div>**** 1337</div>
@@ -97,19 +97,6 @@
             </div>
             <div class="col-2 my-auto">9 999,00 руб.</div>
             <div class="col-2 my-auto">9,00 руб.</div>
-          </div>
-          <div class="row resp-table">
-            <div class="col-2 my-auto pl-0">Купил пиво</div>
-            <div class="col-2">
-              <div>Visa</div>
-              <div>**** 1337</div>
-            </div>
-            <div class="col-2 my-auto">Пивасик</div>
-            <div class="col-2 my-auto">
-              <div>Сегодня 11:31</div>
-            </div>
-            <div class="col-2 my-auto">600,00 руб.</div>
-            <div class="col-2 my-auto">30,00 руб.</div>
           </div>
           <div class="row resp-table">
             <div class="col-2 my-auto pl-0">Оплата интернета</div>
