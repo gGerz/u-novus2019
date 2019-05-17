@@ -49,7 +49,7 @@
                   </select>
                 </div>
                 <div>Как к вам обращаться?</div>
-                <input type="text" class="form-control" id="validationServer01" placeholder="First name" value="Семпай" required>
+                <input type="text" class="form-control" id="validationServer01" placeholder="First name" value="Хозяин" required>
               </div>
             </div>
             <div class="modal-footer">
