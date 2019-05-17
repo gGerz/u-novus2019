@@ -3,9 +3,65 @@
     <div class="dev-line my-4 mx-auto"></div>
     <div class="d-flex justify-content-center">
       <div class="resp_box">
-        <div v-if="label.text !== ''" class="mb-3">{{label.text}}</div>
-        <button class="btn-resp" v-if="label.step === 1">Взять кредит</button>
-        <button class="btn-resp" v-if="label.step === 1">Пополнить счет</button>
+<!--        <card v-if="label.step === 1" />-->
+        <div v-if="label.step === 1" class="d-flex justify-content-center">
+          <div class=" w-100">
+            <div class="balance d-flex justify-content-between">
+              <div class="">
+                <div class="card_title">Visa classic<img class="visa ml-3" src="../assets/visa.jpg" alt=""></div>
+                <div class="font14">
+                  Дебютовая карта
+                </div>
+                <div class="font14">**** 0451, дествительно до 11/2020</div>
+              </div>
+              <div class="d-flex">
+                <div class="font24">
+                  1 736.69 Р
+                </div>
+
+              </div>
+
+            </div>
+            <button class="btn-resp mt-3">Взять кредит</button>
+            <button class="btn-resp mt-3">Пополнить счет</button>
+            <!--      <button class="btn-resp mt-3">Внести деньги на счет</button>-->
+
+            <!--      <div class="card_line my-4"></div>-->
+            <!--      <div class="balance d-flex justify-content-between">-->
+            <!--        <div class="">-->
+            <!--          <div class="card_title">Visa classic<img class="visa ml-3" src="../assets/visa.jpg" alt=""></div>-->
+            <!--          <div class="font14">-->
+            <!--            Кредитные карта-->
+            <!--          </div>-->
+            <!--          <div class="font14">**** 0451, дествительно до 11/2020</div>-->
+            <!--        </div>-->
+            <!--        <div class="d-flex">-->
+            <!--          <div class="font24">-->
+            <!--             419 420.69 Р-->
+            <!--          </div>-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--      <div class="card_line my-4"></div>-->
+            <!--      <div class="balance d-flex justify-content-between">-->
+            <!--        <div class="">-->
+            <!--          <div class="card_title">Visa classic<img class="visa ml-3" src="../assets/visa.jpg" alt=""></div>-->
+            <!--          <div class="font14">-->
+            <!--            Кредитная карта-->
+            <!--          </div>-->
+            <!--          <div class="font14">**** 3822, дествительно до 11/2020</div>-->
+            <!--        </div>-->
+            <!--        <div class="d-flex">-->
+            <!--          <div class="font24">-->
+            <!--            288 000.69 Р-->
+            <!--          </div>-->
+            <!--        </div>-->
+            <!--      </div>-->
+          </div>
+        </div>
+
+<!--        <div v-if="label.text !== ''" class="mb-3">{{label.text}}</div>-->
+<!--        <button class="btn-resp" v-if="label.step === 1">Взять кредит</button>-->
+<!--        <button class="btn-resp" v-if="label.step === 1">Пополнить счет</button>-->
         <div v-if="label.step === 2">
           <div class="row resp-table">
             <div class="col-2 pl-0">Оплата услуг</div>

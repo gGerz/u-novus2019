@@ -17,7 +17,9 @@
         </div>
 
       </div>
-      <button class="btn-resp mt-3">Внести деньги на счет</button>
+      <button class="btn-resp mt-3">Взять кредит</button>
+      <button class="btn-resp mt-3">Пополнить счет</button>
+<!--      <button class="btn-resp mt-3">Внести деньги на счет</button>-->
       <div class="card_war">
         <span class="font-weight-bold">Внимание!</span> Если в течение этого месяца вы внесли меньше 2000, нам будут начислены проценты по карте.
 
