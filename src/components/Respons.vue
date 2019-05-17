@@ -10,7 +10,7 @@
               <div class="">
                 <div class="card_title">Visa classic<img class="visa ml-3" src="../assets/visa.jpg" alt=""></div>
                 <div class="font14">
-                  Дебютовая карта
+                  Дебетовая карта
                 </div>
                 <div class="font14">**** 0451, дествительно до 11/2020</div>
               </div>
@@ -190,5 +190,26 @@
       width: 350px;
       font-weight: 300;
     }
+  }
+  .card_war {
+    padding-top: 15px;
+    width: 650px;
+    font-size: 12px;
+    color: #a0a0a0;
+  }
+  .card_title {
+    font-size: 24px;
+  }
+  .font14 {
+    font-size: 14px;
+  }
+  .font24 {
+    font-size: 24px;
+  }
+  .visa {
+    width: 40px;
+  }
+  .card_line {
+    border-bottom: 2px solid #dfdfdf;
   }
 </style>
